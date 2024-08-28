@@ -1,4 +1,8 @@
 /* Generics  */
+body{
+    background-color: rgb(239, 234, 234);
+}
+
 img{
     max-width: 100%;
     border-radius: 10px;
@@ -11,6 +15,7 @@ ul{
 }
 
 li{
+    background-color: white;
     flex-basis: calc(100%/3 - 10px);
     border: 1px solid gray;
     border-radius: 15px;

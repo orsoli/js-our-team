@@ -2,6 +2,38 @@
 // Retrieve interested elements from DOM
 const containerElement = document.querySelector(".container ul");
 
+// Define functions
+// Create a function to print in console
+/**
+ *
+ * @param {*} profile
+ */
+const printInConsole = (profile) => {
+  // Print in Console all data
+  console.log(`
+    Name: ${profile.firstName}
+    Surname: ${profile.lastName}
+    Role: ${profile.job}
+    Profile Photo: ${profile.portretImg}
+    `);
+};
+
+// Create a function to print in DOM
+/**
+ *
+ * @param {*} profile
+ */
+const printInDom = (profile) => {
+  // Create html structure and print in ul element with inerHTML
+  containerElement.innerHTML += `
+  <li>
+        <img src="${profile.portretImg}" alt="">
+        <h4>${profile.firstName} ${profile.lastName}</h4>
+        <p>${profile.job}</p>
+  </li>
+`;
+};
+
 // Create array object called data
 const profilesData = [
   {
@@ -45,20 +77,6 @@ const profilesData = [
 // --- Proccesing Phase
 // Create a for of loop to pass in each object inside profilesData array
 for (let profile of profilesData) {
-  // Create html structure and print in ul element with inerHTML
-  containerElement.innerHTML += `
-      <li>
-            <img src="${profile.portretImg}" alt="">
-            <h5>${profile.firstName} ${profile.lastName}</h5>
-            <p>${profile.job}</p>
-      </li>
-    `;
-
-  // Print in Console all data
-  console.log(`
-        Name: ${profile.firstName}
-        Surname: ${profile.lastName}
-        Role: ${profile.job}
-        Profile Photo: ${profile.portretImg}
-        `);
+  printInConsole(profile); // Call back printInConsole arrow function and give 'profile' argument.
+  printInDom(profile); // Call back printInDom arrow function and give 'profile' argument.
 }
