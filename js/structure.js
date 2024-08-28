@@ -17,3 +17,9 @@
 // MILESTONE 1: Print the name, role, and photo string information to the console.
 // - Create a for of loop to pass in each object inside profilesData array
 // - Print in cosole prifole.name, profile.lastName, profile.role and profile.img
+
+// MILESTONE 2: Print the same information to the DOM as strings.
+//- Prepare DOM elements
+//- Retrieve the interested elements from DOM
+//- Create a structure with <ul> and <li> structure inside loop alrady existing
+//- And print in domwith innerHTML

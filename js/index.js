@@ -1,4 +1,7 @@
 // --- Preparation phase
+// Retrieve interested elements from DOM
+const containerElement = document.getElementById("container");
+
 // Create array object called data
 const profilesData = [
   {
@@ -42,6 +45,17 @@ const profilesData = [
 // --- Proccesing Phase
 // Create a for of loop to pass in each object inside profilesData array
 for (let profile of profilesData) {
+  // Create html structure and print in container element with inerHTML
+  containerElement.innerHTML += `
+    <ul>
+        <H6>Candidate</H6>
+        <li>Name: ${profile.firstName}</li>
+        <li>Surname: ${profile.lastName}</li>
+        <li>Role: ${profile.job}</li>
+        <li>Profile Photo: ${profile.portretImg}</li>
+    <ul>
+  `;
+
   // Print in Console all data
   console.log(`
         Name: ${profile.firstName}
