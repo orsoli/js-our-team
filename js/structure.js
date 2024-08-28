@@ -27,3 +27,7 @@
 // BONUS 1 : Transform the photo string into an actual image.
 //- Prepare CSS
 //- In portret photo <li> add <img src="profile.portretImg"/>
+
+// BONUS 2: Organize individual members into cards.
+//- Prepare HTML structure
+//- Organize the same structure inside existing for of loop how to print in page
