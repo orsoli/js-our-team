@@ -23,3 +23,7 @@
 //- Retrieve the interested elements from DOM
 //- Create a structure with <ul> and <li> structure inside loop alrady existing
 //- And print in domwith innerHTML
+
+// BONUS 1 : Transform the photo string into an actual image.
+//- Prepare CSS
+//- In portret photo <li> add <img src="profile.portretImg"/>

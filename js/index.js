@@ -47,12 +47,12 @@ const profilesData = [
 for (let profile of profilesData) {
   // Create html structure and print in container element with inerHTML
   containerElement.innerHTML += `
-    <ul>
-        <H6>Candidate</H6>
+    <ul class = 'list-unstyled'>
+        <H5>Candidate</H5>
         <li>Name: ${profile.firstName}</li>
         <li>Surname: ${profile.lastName}</li>
         <li>Role: ${profile.job}</li>
-        <li>Profile Photo: ${profile.portretImg}</li>
+        <li><img src='${profile.portretImg}' /></li>
     <ul>
   `;
 
