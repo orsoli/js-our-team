@@ -12,4 +12,8 @@
 */
 
 // MILESTONE 0: Create the array of objects with the provided information.
-// Create object array called data which keep inside arrays with properties firstName, lastName, job and profilImg
+// - Create object array called profilesData which keep inside objects with properties(kyes) firstName, lastName, job and profilImg and valus for each
+
+// MILESTONE 1: Print the name, role, and photo string information to the console.
+// - Create a for of loop to pass in each object inside profilesData array
+// - Print in cosole prifole.name, profile.lastName, profile.role and profile.img
